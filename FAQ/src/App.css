@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body{
+  text-align: center;
+  margin-top: 100px;
+  background-color: #555;
+}
+.faq-accordion{
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #c3a3a3;
+  padding: 10px;
+}
+
+.faq-accordion h2{
+  margin: 20px 0;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-item-header{
+  margin: 0 10px;
+  background-color: #5c3030;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item-header:hover{
+  background-color: #733838;
+}
+
+.faq-item-body{
+  background-color: #dad0d0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.9s ease-in-out;
+  margin: 0px 10px;
+}
+
+.faq-item-body-content{
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.faq-item.active .faq-item-body{
+  max-height: 300px;
+  /* margin: 0px 10px; */
+}
